@@ -6,116 +6,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <img src="img/hero.jpg">
+    <header>
+        <h1 class="titulo">SUSANA ROJAS TRIANA</h1> 
+        <h2 class="subtitulo">Fecha de nacimiento: 14/12/1999</h2>
     </header>
-    <div align="center">
-        <h1 style="color: red;">SUSANA ROJAS TRIANA</h1> 
-        <h2>Fecha de nacimiento: 14/12/1999</h2>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobremi">Sobre Mi</a>
+            <a href="#materias">Materias fav</a>
+        </nav>
     </div>
-    <section style="padding-left: 2rem; padding-right: 2rem;">
-        <p>
-            Hola! Mi nombre es Susana Rojas, tengo 21 años, nací en la ciudad de Cúcuta, Colombia.
-            Mi infancia estuvo enmarcada con mucho amor por parte de mi familia, estudie toda mi primaria
-            y bachillerato en un gransioso colegio llamado Instituto Técnico Nacinal de Comercio, el cual 
-            agradezco con mucho cariño la educación, resposabilidad, carisma que me enseñaron. Me carazterizo
-            por ser una persona constante, a pesar de los errores que han marcado mi vida he sabido encontrar 
-            la solución para salir adelante, me caracterizo por mi resposabilidad y toma de liderazgo en equipos
-            de trabajo. A lo largo de mi vida he practicado el ciclismo que espero retomar pronto, he tenido la 
-            oportunidad de conocer algunas ciudades de Colombia: Bucaramanga, Medellin, Armenia, Pereira, Valledupar, Buga, Santa Marta y Coveñas, 
-            han sido experiencias muy agradables conociendo sus diferentes culturas y gastronomía.  
-        </p>
-        <p>
-            Actualmente estoy en septimo semestre de la carrera de ingeniería de Sistemas en la Universidad Francisco de 
-            Paula Santander, hasta el momento me ha llenado
-            de sueños, trasnochos, aspiraciones que con mucha resposabilidad y trabajo lograré, me ha parecido una de las mejores carreras
-            que ofrece la universidad, con grandes profesionales alentados a enseñar. Es una carrera con bastante carga academica pero que
-            conyeva a metas grandes. Lo mas complicado que de la carrera es prestarle el tiempo necesario y a veces no es 
-            suficiente, por ello en ocasiones dejo de realizar actividades extraclases para dedicarle tiempo a la carrera. Lo que más me gusta
-            de la carrera hablando de ramas es el diseño y construccion de aplicativos web.  En 5 años me veo trabajando en una empresa importante de 
-            Colombia como frontend developer y en proceso a Fullstack. 
-        </p>
-    </section>
-    <section style="padding-left: 2rem; padding-right: 2rem;">
-        <div>
-            <h3>Mis hobbies</h3>
-            <ul>
-                <li>Ciclismo</li>
-                <li>Tocar piano</li>
-                <li>Cocinar</li>
-                <li>Leer</li>
-                <li>Ver series</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Mis películas y series favoritas</h3>
-            <ul>
-                <li>Series
-                    <ul>
-                        <li>Mr Robot</li>
-                        <li>The Witcher</li>
-                        <li>Lucifer</li>
-                    </ul>
-                </li>
-                <li>Películas
-                    <ul>
-                        <li>Spider-Man</li>
-                        <li>Harry Potter</li>
-                        <li>Titanic</li>
-                    </ul>
-                </li>
-        </div>
-        <div>
-            <h3>Mi canción favorita es Snow Patrol - Chasing Cars</h3>
-            <audio src="cancion.mp3" preload="none" controls></audio>
-            <audio src="cancion.mp3" autoplay loop></audio>
-        </div>
-        <div>
-            <h3>Mis materias favoritas</h3>
-            <table class="default" border="2" style="background-color:seashell;">
-                <tr>
-                  <th>Materia</th>
-                  <th>Nota</th>
-                  <th>Razón</th>
-                </tr>
 
-                <tr>
-                  <td>POO</td>
-                  <td>4</td>
-                  <td>Fue la materia en la que aprendí que el trabajo autonomo es lo mejor para estudiar y entender</td>
-                </tr>
-
-                <tr>
-                    <td>Fisica Mecanica</td>
-                    <td>3.8</td>
-                    <td>Siempre me he destacado en la Física y consdero que tuve un buen profesor</td>
-                </tr>
-
-                <tr>
-                    <td>Estructura de datos</td>
-                    <td>4.2</td>
-                    <td>Me gustó la forma en como enseñaba el ing de la materia</td>
-                </tr>
-
-                <tr>
-                    <td>Seminario de Investigación III </td>
-                    <td>4.2</td>
-                    <td>Fue una de las materias mas exigentes que he visto ya que me conyevo a una investigación profunda del tema
-                        pero gracias a la ing y a mi equipo pudimos sacar un buen proyecto
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Arquitectura de Computadores.</td>
-                    <td>3.7</td>
-                    <td>Creo que tiene un gran ing. a cargo de la materia, me lleve muchos conocimientos que eran importantes para mi carrera y no los tenia presente en el momento. </td>
-                </tr>
-              </table>
+    <section class="hero" id="inicio">
+        <div class="contenido-hero">
+            <h2 >Hoja de Vida</h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                  </svg>
+                <p>Cúcuta, Norte de Santander</p>
+            </div>
+        <a class="boton" href="#">Contactar</a>
         </div>
     </section>
-    <footer style="text-align: right;">Formulario: https://susanart.github.io/formulario/    </footer>
+    
+    <main class="contenedor sombra">
+        <h2 id="sobremi">Sobre mi</h2>
+     <div class="inicio">
+        <section class="sobremi" >
+            <h3>Mi historia</h3>
+            <div class="iconos ">
+                <img src="/img/Imagen1.png" class="imagen">
+            </div>
+                <p>
+                    Hola! Mi nombre es Susana Rojas, tengo 21 años, nací en la ciudad de Cúcuta, Colombia.
+                    Mi infancia estuvo enmarcada con mucho amor por parte de mi familia, estudie toda mi primaria
+                    y bachillerato en un gransioso colegio llamado Instituto Técnico Nacinal de Comercio, el cual 
+                    agradezco con mucho cariño la educación, resposabilidad, carisma que me enseñaron. Me carazterizo
+                    por ser una persona constante, a pesar de los errores que han marcado mi vida he sabido encontrar 
+                    la solución para salir adelante, me caracterizo por mi resposabilidad y toma de liderazgo en equipos
+                    de trabajo. A lo largo de mi vida he practicado el ciclismo que espero retomar pronto, he tenido la 
+                    oportunidad de conocer algunas ciudades de Colombia, estas 
+                    han sido experiencias muy agradables conociendo sus diferentes culturas y gastronomía.  
+                </p>
+                <p>
+                    Actualmente estoy en septimo semestre de la carrera de ingeniería de Sistemas en la Universidad Francisco de 
+                    Paula Santander, hasta el momento me ha llenado
+                    de sueños, trasnochos, aspiraciones que con mucha resposabilidad y trabajo lograré, me ha parecido una de las mejores carreras
+                    que ofrece la universidad, con grandes profesionales alentados a enseñar. Es una carrera con bastante carga academica pero que
+                    conyeva a metas grandes. Lo mas complicado que de la carrera es prestarle el tiempo necesario y a veces no es 
+                    suficiente, por ello en ocasiones dejo de realizar actividades extraclases para dedicarle tiempo a la carrera. Lo que más me gusta
+                    de la carrera hablando de ramas es el diseño y construccion de aplicativos web.  En 5 años me veo trabajando en una empresa importante de 
+                    Colombia como frontend developer y en proceso a Fullstack. 
+                </p>
+        </section>
+        <div class="grid">
+                <section class="sobremi">
+                    <h3>Mis hobbies</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bike" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="5" cy="18" r="3" />
+                            <circle cx="19" cy="18" r="3" />
+                            <polyline points="12 19 12 15 9 12 14 8 16 11 19 11" />
+                            <circle cx="17" cy="5" r="1" />
+                          </svg>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Ciclismo</li>
+                            <li>Tocar piano</li>
+                            <li>Cocinar</li>
+                            <li>Leer</li>
+                            <li>Ver series</li>
+                        </ul>
+                    </div>
+                </section>
+            
+                <section class="sobremi">
+                    <h3>Peliculas y Series favoritas</h3>
+                    <div class="iconos">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-movie" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="4" x2="8" y2="20" />
+                            <line x1="16" y1="4" x2="16" y2="20" />
+                            <line x1="4" y1="8" x2="8" y2="8" />
+                            <line x1="4" y1="16" x2="8" y2="16" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="16" y1="8" x2="20" y2="8" />
+                            <line x1="16" y1="16" x2="20" y2="16" />
+                          </svg>
+                    </div>
+                    <div>   
+                                <ul>
+                                    <li>Mr Robot</li>
+                                    <li>The Witcher</li>
+                                    <li>Lucifer</li>
+                                    <li>Spider-Man</li>
+                                    <li>Harry Potter</li>
+                                    <li>Titanic</li>
+                                </ul>
+                    </div>
+                </section>
+                <section class="sobremi">
+                    <h3>Cancion favorita</h3> 
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="17" r="3" />
+                            <circle cx="16" cy="17" r="3" />
+                            <polyline points="9 17 9 4 19 4 19 17" />
+                            <line x1="9" y1="8" x2="19" y2="8" />
+                          </svg>
+                    </div> <br>
+                    <div>
+                        <audio src="cancion.mp3" preload="none" controls></audio>
+                        <audio src="cancion.mp3" autoplay loop></audio>
+                    </div>
+                </section>
+            </div>
+            <section class="sobremi" id="materias">
+                <h3>Mis materias Favoritas</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                        <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="4" width="18" height="12" rx="1" />
+                        <line x1="7" y1="20" x2="17" y2="20" />
+                        <line x1="9" y1="16" x2="9" y2="20" />
+                        <line x1="15" y1="16" x2="15" y2="20" />
+                      </svg>
+                </div>
+                <div> <br>
+                    <table class="table" >
+                        <tr>
+                        <th>Materia</th>
+                        <th>Nota</th>
+                        <th>Razón</th>
+                        </tr>
+        
+                        <tr>
+                        <td>POO</td>
+                        <td>4</td>
+                        <td>Fue la materia en la que aprendí que el trabajo autonomo es lo mejor para estudiar y entender</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fisica Mecanica</td>
+                            <td>3.8</td>
+                            <td>Siempre me he destacado en la Física y consdero que tuve un buen profesor</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Estructura de datos</td>
+                            <td>4.2</td>
+                            <td>Me gustó la forma en como enseñaba el ing de la materia</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Seminario de Investigación III </td>
+                            <td>4.2</td>
+                            <td>Fue una de las materias mas exigentes que he visto ya que me conyevo a una investigación profunda del tema
+                                pero gracias a la ing y a mi equipo pudimos sacar un buen proyecto
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>Arquitectura de Computadores.</td>
+                            <td>3.7</td>
+                            <td>Creo que tiene un gran ing. a cargo de la materia, me lleve muchos conocimientos que eran importantes para mi carrera y no los tenia presente en el momento. </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+     </div>
+    </main> <br>
+    
+    <footer class="footer">  
+        <h4>Formulario: https://susanart.github.io/formulario/</h4>
+        
+    
+    </footer>
 </body>
 </html>
