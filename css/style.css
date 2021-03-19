@@ -92,14 +92,22 @@ h1,h2,h3 {
     }
 }
 
-
-
-/* Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     background-color: rgba(243, 246, 247, 0.56);
   }
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        background-color: rgba(243, 246, 247, 0.56);
+      }
+  }
+
+/* Grid */
+
 /* Navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
